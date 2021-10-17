@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .to(['#Pc-frame','#Display-black','#Keyboard','#Display-white'], 2, {
         opacity:1
     })
-    .to(['#Display-black','#cursor-manshad'], 1, {
+    .to(['#Display-black','#cursor-manshad','#frontend-dev'], 1, {
         opacity:0
     })
     .to('#Display-for-code',3,{
@@ -44,12 +44,40 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity:1
     },'-=.5')
     .to('#rec-for-manshad_2',3,{
-        x:300,
+        x:290,
         width:'60px'
+    })
+    .to('#cursor-manshad',3,{
+        x:290
+    },'-=3')
+    .to('#cursor-manshad',.6,{
+        opacity:0
+    })
+    .to('#cursor-manshad',.6,{
+        opacity:1
+    })
+    .to('#cursor-manshad',.6,{
+        opacity:0
+    })
+    .to('#cursor-manshad',.6,{
+        opacity:1
+    })
+    .to('#cursor-manshad',.6,{
+        opacity:0
+    })
+    .to('#cursor-manshad',.6,{
+        opacity:1
+    })
+
+    .to('#cursor-manshad',.6,{
+        opacity:0
+    })
+    .to('#frontend-dev',3,{
+        opacity:1
     })
     .to('#shelf',6,{
         opacity:0
-    })
+    },'+=3')
     .to('.hero',6,{
         xPercent:-50
     })

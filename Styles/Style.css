@@ -121,4 +121,11 @@ body {
 }
 
 /* its for hero page  */
+#rec-for-manshad_2 {
+  z-index: 0;
+}
+
+#Pc-frame {
+  z-index: 2;
+}
 /*# sourceMappingURL=Style.css.map */
