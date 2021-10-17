@@ -1,34 +1,69 @@
+
 /* the pre reset  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .2s ease;
 }
 
 /* its the body  */
-
+body{
+    overflow-x: hidden;
+    
+}
 .container {
     width: 100vw;
     overflow-x: hidden;
+    height: 200vh;
+    
 
     .hero {
         width: 200vw;
         height: 100vh;
+        overflow: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        
 
 
         /* its the hero page first section  */
         .first-section {
             width: 100vw;
             display: grid;
+            overflow: hidden;
             place-items: center;
             height: 100vh;
             background: #000;
+            border: none;
+            .texts{
+                position: fixed;
+                top: 30%;
+                left: 50%;
+                width: 20%;
+                color: rgb(0, 0, 0);
+                .helloo{
+                    width: 110px;
+                    h1{
+                        position: relative;
+                        width: 100%;
+                        color: white;
+                        &::before{
+                            position: absolute;
+                            content: attr(data-text);
+                            height: 100%;
+                            color: black;
+                            width: 100%;
+                            border-right: solid 3px red;
+                        }
+                    }
+                }
+                
+            }
 
             /* its the hero page svg  */
             svg {
-                scale: .7;
+                scale: .3;
 
 
                 #Scroll-icon {
@@ -49,8 +84,16 @@
                     #Display-black,
                     #Display-white,
                     #Tea,
-                    #Book {
+                    #Book ,
+                    #Display-for-code{
                         opacity: 0;
+                        overflow: hidden;
+                    }
+                    #Display-for-code{
+                        overflow-x: hidden;
+                    }
+                    #rec-for-hello{
+                        width: 20px;
                     }
 
                 }
@@ -63,9 +106,10 @@
             display: grid;
             overflow: hidden;
             place-items: center;
+            border: none;
 
             svg {
-                transform: translateY();
+                transform: translateY(0);
             }
         }
 
