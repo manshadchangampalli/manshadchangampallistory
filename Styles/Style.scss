@@ -1,0 +1,69 @@
+/* the pre reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* its the body  */
+body {}
+
+/* its for hero page  */
+.hero {
+    width: 200vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    /* its the hero page first section  */
+    .first-section {
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background: #000;
+
+        /* its the hero page svg  */
+        svg {
+            scale: .7;
+
+            
+            #Scroll-icon {
+                
+                transform: translateY(50px);
+            }
+
+            // 
+            #FirstSectionSvg {
+                /*its the scroll icon icluded svg*/
+                /* its the table svg*/
+                #Table,
+                #Mobile,
+                #Paper,
+                #Keyboard,
+                #Pc-frame,
+                #Display-black,
+                #Display-white,
+                #Tea,
+                #Book {
+                    opacity: 0;
+                }
+
+            }
+        }
+    }
+    
+    .second-section{
+        /*its the second section */ 
+        background: #842227;
+        display: grid;
+        overflow: hidden;
+        place-items: center;
+       
+        svg{
+            transform: translateY();
+        }
+    }
+
+}

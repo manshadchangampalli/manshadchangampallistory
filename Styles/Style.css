@@ -1,22 +1,70 @@
 /* the pre reset  */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-/* its the body  */
-body{
-}
-.hero{
-    width: 200vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
+/* its the body  */
+/* its for hero page  */
+.hero {
+  width: 200vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  /* its the hero page first section  */
 }
-.first-section{
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    
+
+.hero .first-section {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #000;
+  /* its the hero page svg  */
 }
+
+.hero .first-section svg {
+  scale: .7;
+}
+
+.hero .first-section svg #Scroll-icon {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.hero .first-section svg #FirstSectionSvg {
+  /*its the scroll icon icluded svg*/
+  /* its the table svg*/
+}
+
+.hero .first-section svg #FirstSectionSvg #Table,
+.hero .first-section svg #FirstSectionSvg #Mobile,
+.hero .first-section svg #FirstSectionSvg #Paper,
+.hero .first-section svg #FirstSectionSvg #Keyboard,
+.hero .first-section svg #FirstSectionSvg #Pc-frame,
+.hero .first-section svg #FirstSectionSvg #Display-black,
+.hero .first-section svg #FirstSectionSvg #Display-white,
+.hero .first-section svg #FirstSectionSvg #Tea,
+.hero .first-section svg #FirstSectionSvg #Book {
+  opacity: 0;
+}
+
+.hero .second-section {
+  /*its the second section */
+  background: #842227;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+}
+
+.hero .second-section svg {
+  -webkit-transform: translateY();
+          transform: translateY();
+}
+/*# sourceMappingURL=Style.css.map */
