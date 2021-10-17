@@ -105,6 +105,14 @@ body {
   width: 20px;
 }
 
+.container .hero .first-section svg #FirstSectionSvg #rec-for-manshad_2 {
+  z-index: 0;
+}
+
+.container .hero .first-section svg #FirstSectionSvg #Pc-frame {
+  z-index: 2;
+}
+
 .container .hero .second-section {
   /*its the second section */
   background: #842227;
@@ -121,11 +129,4 @@ body {
 }
 
 /* its for hero page  */
-#rec-for-manshad_2 {
-  z-index: 0;
-}
-
-#Pc-frame {
-  z-index: 2;
-}
 /*# sourceMappingURL=Style.css.map */

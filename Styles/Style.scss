@@ -95,6 +95,12 @@ body{
                     #rec-for-hello{
                         width: 20px;
                     }
+                    #rec-for-manshad_2{
+                        z-index: 0;
+                    }
+                    #Pc-frame{
+                        z-index: 2;
+                    }
 
                 }
             }
@@ -121,9 +127,3 @@ body{
 
 
 
-#rec-for-manshad_2{
-    z-index: 0;
-}
-#Pc-frame{
-    z-index: 2;
-}
