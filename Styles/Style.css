@@ -6,9 +6,13 @@
           box-sizing: border-box;
 }
 
-/* its the body  */
-/* its for hero page  */
-.hero {
+/* its the main body  */
+.container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container .hero {
   width: 200vw;
   height: 100vh;
   display: -ms-grid;
@@ -18,7 +22,7 @@
   /* its the hero page first section  */
 }
 
-.hero .first-section {
+.container .hero .first-section {
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -28,33 +32,33 @@
   /* its the hero page svg  */
 }
 
-.hero .first-section svg {
+.container .hero .first-section svg {
   scale: .7;
 }
 
-.hero .first-section svg #Scroll-icon {
+.container .hero .first-section svg #Scroll-icon {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
 
-.hero .first-section svg #FirstSectionSvg {
+.container .hero .first-section svg #FirstSectionSvg {
   /*its the scroll icon icluded svg*/
   /* its the table svg*/
 }
 
-.hero .first-section svg #FirstSectionSvg #Table,
-.hero .first-section svg #FirstSectionSvg #Mobile,
-.hero .first-section svg #FirstSectionSvg #Paper,
-.hero .first-section svg #FirstSectionSvg #Keyboard,
-.hero .first-section svg #FirstSectionSvg #Pc-frame,
-.hero .first-section svg #FirstSectionSvg #Display-black,
-.hero .first-section svg #FirstSectionSvg #Display-white,
-.hero .first-section svg #FirstSectionSvg #Tea,
-.hero .first-section svg #FirstSectionSvg #Book {
+.container .hero .first-section svg #FirstSectionSvg #Table,
+.container .hero .first-section svg #FirstSectionSvg #Mobile,
+.container .hero .first-section svg #FirstSectionSvg #Paper,
+.container .hero .first-section svg #FirstSectionSvg #Keyboard,
+.container .hero .first-section svg #FirstSectionSvg #Pc-frame,
+.container .hero .first-section svg #FirstSectionSvg #Display-black,
+.container .hero .first-section svg #FirstSectionSvg #Display-white,
+.container .hero .first-section svg #FirstSectionSvg #Tea,
+.container .hero .first-section svg #FirstSectionSvg #Book {
   opacity: 0;
 }
 
-.hero .second-section {
+.container .hero .second-section {
   /*its the second section */
   background: #842227;
   display: -ms-grid;
@@ -63,8 +67,10 @@
   place-items: center;
 }
 
-.hero .second-section svg {
+.container .hero .second-section svg {
   -webkit-transform: translateY();
           transform: translateY();
 }
+
+/* its for hero page  */
 /*# sourceMappingURL=Style.css.map */
