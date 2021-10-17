@@ -10,12 +10,13 @@
 /* its the body  */
 body{
     overflow-x: hidden;
+    background: #000;
     
 }
 .container {
     width: 100vw;
     overflow-x: hidden;
-    height: 200vh;
+    height: auto;
     
 
     .hero {
@@ -119,6 +120,26 @@ body{
             }
         }
 
+    }
+    .mobile-page{
+        background: #B8531A;
+        width: 100vw;
+        min-height: 100vh;
+        display: grid;
+        position: relative;
+        place-items: center;
+        z-index: -1;
+        svg{
+            overflow: hidden;
+            #Background-of-the-mobile{
+                opacity:0;
+            }
+        }
+        .keyboardofmob{
+            position: absolute;
+            right:-280px;
+            top: -185px;
+        }
     }
 }
 

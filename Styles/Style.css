@@ -11,12 +11,13 @@
 /* its the body  */
 body {
   overflow-x: hidden;
+  background: #000;
 }
 
 .container {
   width: 100vw;
   overflow-x: hidden;
-  height: 200vh;
+  height: auto;
 }
 
 .container .hero {
@@ -126,6 +127,31 @@ body {
 .container .hero .second-section svg {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.container .mobile-page {
+  background: #B8531A;
+  width: 100vw;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  place-items: center;
+  z-index: -1;
+}
+
+.container .mobile-page svg {
+  overflow: hidden;
+}
+
+.container .mobile-page svg #Background-of-the-mobile {
+  opacity: 0;
+}
+
+.container .mobile-page .keyboardofmob {
+  position: absolute;
+  right: -280px;
+  top: -185px;
 }
 
 /* its for hero page  */
