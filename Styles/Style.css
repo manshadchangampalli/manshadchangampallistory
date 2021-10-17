@@ -1,0 +1,22 @@
+/* the pre reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* its the body  */
+body{
+}
+.hero{
+    width: 200vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.first-section{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    
+}
