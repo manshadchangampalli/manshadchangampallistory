@@ -194,6 +194,60 @@ document.addEventListener('DOMContentLoaded', () => {
         backgroundColor:'#fff',
         ease: Power3.easeInOut
     })
+    .to('.mob-img',3,{
+        opacity:1,
+        ease:Power3.easeInOut
+    })
+    .to(['.mobile','.display'],3,{
+        opacity:1,
+        ease:Power3.easeInOut
+    })
+    .to('.display',3,{
+        backgroundColor:'white',
+        ease:Power3.easeInOut
+    })
+    .to('.curtain-house-img',5,{
+        opacity:1,
+        ease:Power3.easeInOut
+    })
+    .to('.curtain-house-img',5,{
+        opacity:0,
+        ease:Power3.easeInOut
+    })
+    .to('.display',5,{
+        backgroundColor:'black',
+        ease:Power3.easeInOut
+    })
+    .to('.texki-img',5,{
+        opacity:1,
+        ease:Power3.easeInOut
+    })
+    .to(".mobile",5,{
+        scale:.4,
+        y:-150,
+        x:-10,
+        ease:Power3.easeInOut
+    })
+    .to(".mob-img",5,{
+        width:300,
+        borderRadius:15,
+        borderColor:'black',
+        height:300,
+        ease:Power3.easeInOut
+    },'-=5')
+    .to(".container_3",5,{
+        backgroundColor:'#B0FFF1',
+        ease:Power3.easeInOut
+    },'-=5')
+    .to('.container_3',5,{
+        y:-450,
+        ease:Power3.easeInOut
+    })
+    .to('.container_3',5,{
+        y:-900,
+        ease:Power3.easeInOut
+    })
+    
     
     
     
