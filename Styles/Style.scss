@@ -116,39 +116,75 @@ body{
                     grid-template-rows: 1fr 1fr;
                     .mobile-img-wraper{
                         display: grid;
+                        height: auto;
                         place-items: center;
                         .mob-img{
                             width: 100%;
                             display: grid;
                             place-items: center;
                             height: 100vh;
+                            // transform: scale(.5);
                             background: #b8531a;
                             .mobile{
                                 width: 320px;
                                 height: 600px;
                                 transform: rotate(-30deg);
-                                border-radius: 10px;
+                                border-radius: 25px;
                                 position: relative;
                                 background: white;
                                 &::after{
                                     content: '';
                                     position: absolute;
-                                    width: 50px;
-                                    height: 50px;
-                                    background: #000;
+                                    width: 55px;
+                                    height: 55px;
+                                    background: rgb(255, 255, 255);
                                     bottom: 7%;
                                     left: 50%;
                                     transform: translate(-50%,50%);
                                     border-radius: 50%;
+                                    box-shadow: inset -5px 5px  15px rgba(0, 0, 0, 0.171);
+                                }
+                                .dot-1{
+                                    
+                                    position: absolute;
+                                    width: 5px;
+                                    height: 5px;
+                                    background: rgb(0, 0, 0);
+                                    top: 4%;
+                                    left: 50%;
+                                    transform: translate(-50%,50%);
+                                    border-radius: 50%;
+                                    
+                                }.dot-2{                                   
+                                    position: absolute;
+                                    width: 10px;
+                                    height: 10px;
+                                    background: rgb(0, 0, 0);
+                                    top: 6%;
+                                    left: 35%;
+                                    transform: translate(-50%,50%);
+                                    border-radius: 50%;
+                                    
+                                }
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 65px;
+                                    height: 5px;
+                                    border-radius: 10px;
+                                    background: #000;
+                                    top: 7%;
+                                    left: 50%;
+                                    transform: translate(-50%,50%);
                                 }
                                 .display{
                                     position: absolute;
-                                    width: 90%;
+                                    width: 92%;
                                     height: 75%;
-                                    margin-left: 5%;
-                                    background: #000;
+                                    margin-left: 4%;
+                                    background: rgb(0, 0, 0);                                   
                                     top: 12%;
-                                    border-radius: 5px;
+                                    border-radius: 3px;
                                 }
                             }
                         }

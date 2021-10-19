@@ -134,6 +134,7 @@ body {
 .container .hero .third-section .container_3 .All-img .mobile-img-wraper {
   display: -ms-grid;
   display: grid;
+  height: auto;
   place-items: center;
 }
 
@@ -151,7 +152,7 @@ body {
   height: 600px;
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-  border-radius: 10px;
+  border-radius: 25px;
   position: relative;
   background: white;
 }
@@ -159,24 +160,63 @@ body {
 .container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile::after {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #000;
+  width: 55px;
+  height: 55px;
+  background: white;
   bottom: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+  -webkit-box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.171);
+          box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.171);
+}
+
+.container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile .dot-1 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  top: 4%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   border-radius: 50%;
 }
 
+.container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile .dot-2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  top: 6%;
+  left: 35%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+}
+
+.container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile::before {
+  content: '';
+  position: absolute;
+  width: 65px;
+  height: 5px;
+  border-radius: 10px;
+  background: #000;
+  top: 7%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
 .container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile .display {
   position: absolute;
-  width: 90%;
+  width: 92%;
   height: 75%;
-  margin-left: 5%;
-  background: #000;
+  margin-left: 4%;
+  background: black;
   top: 12%;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .container .hero .third-section .container_3 .All-img .images-wraper {
