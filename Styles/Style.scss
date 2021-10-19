@@ -107,40 +107,83 @@ body{
                 width: 100vw;
                 height: 250vh;
                 display: grid;
-                transform: translateY(-900px);
+                // transform: translateY(-900px);
                 background: #B0FFF1;
                 grid-template-rows: 1fr 1fr;
-                .images-wraper{
-                   
+                .All-img{
                     display: grid;
-                    grid-gap: 50px;
-                    
-                    grid-template-columns: 1fr 1fr;
-
-                    .first-img{
-                      align-self: center;
-                      justify-self: end;
-                        img{
-                            width: 300px;
-                            height: 300px;
-                            border: 6px solid #000;
-                            border-radius: 18px;
-                            filter: drop-shadow(20px 20px 50px rgba(0, 0, 0, 0.4));
+                    height: auto;
+                    grid-template-rows: 1fr 1fr;
+                    .mobile-img-wraper{
+                        display: grid;
+                        place-items: center;
+                        .mob-img{
+                            width: 100%;
+                            display: grid;
+                            place-items: center;
+                            height: 100vh;
+                            background: #b8531a;
+                            .mobile{
+                                width: 320px;
+                                height: 600px;
+                                transform: rotate(-30deg);
+                                border-radius: 10px;
+                                position: relative;
+                                background: white;
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    width: 50px;
+                                    height: 50px;
+                                    background: #000;
+                                    bottom: 7%;
+                                    left: 50%;
+                                    transform: translate(-50%,50%);
+                                    border-radius: 50%;
+                                }
+                                .display{
+                                    position: absolute;
+                                    width: 90%;
+                                    height: 75%;
+                                    margin-left: 5%;
+                                    background: #000;
+                                    top: 12%;
+                                    border-radius: 5px;
+                                }
+                            }
                         }
                     }
-                    .second-img{
-                        align-self: flex-start;
-                        justify-self: start;
-                          img{
-                              width: 300px;
-                              height: 300px;
-                              border: 6px solid #000;
-                              border-radius: 18px;
-                              filter: drop-shadow(20px 20px 50px rgba(0, 0, 0, 0.4));
-                          }
-
+                    .images-wraper{
+                       
+                        display: grid;
+                        grid-gap: 50px;
+                        grid-template-columns: 1fr 1fr;
+    
+                        .first-img{
+                          align-self: flex-start;
+                          justify-self: end;
+                            img{
+                                width: 300px;
+                                height: 300px;
+                                border: 6px solid #000;
+                                border-radius: 18px;
+                                filter: drop-shadow(20px 20px 50px rgba(0, 0, 0, 0.4));
+                            }
+                        }
+                        .second-img{
+                            align-self: flex-start;
+                            justify-self: start;
+                              img{
+                                  width: 300px;
+                                  height: 300px;
+                                  border: 6px solid #000;
+                                  border-radius: 18px;
+                                  filter: drop-shadow(20px 20px 50px rgba(0, 0, 0, 0.4));
+                              }
+    
+                        }
+                        
                     }
-                    
                 }
                 .tv-wraper{
                     display: grid;
