@@ -168,8 +168,8 @@ body {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   border-radius: 50%;
-  -webkit-box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.171);
-          box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.171);
+  -webkit-box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.11);
+          box-shadow: inset -5px 5px 15px rgba(0, 0, 0, 0.11);
 }
 
 .container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile .dot-1 {
@@ -216,7 +216,16 @@ body {
   margin-left: 4%;
   background: black;
   top: 12%;
+  border: 1px solid dimgray;
   border-radius: 3px;
+}
+
+.container .hero .third-section .container_3 .All-img .mobile-img-wraper .mob-img .mobile .display img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .container .hero .third-section .container_3 .All-img .images-wraper {

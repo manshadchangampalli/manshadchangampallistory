@@ -107,7 +107,7 @@ body{
                 width: 100vw;
                 height: 250vh;
                 display: grid;
-                // transform: translateY(-900px);
+                // transform: translateY(-100px);
                 background: #B0FFF1;
                 grid-template-rows: 1fr 1fr;
                 .All-img{
@@ -142,7 +142,7 @@ body{
                                     left: 50%;
                                     transform: translate(-50%,50%);
                                     border-radius: 50%;
-                                    box-shadow: inset -5px 5px  15px rgba(0, 0, 0, 0.171);
+                                    box-shadow: inset -5px 5px  15px rgba(0, 0, 0, 0.11);
                                 }
                                 .dot-1{
                                     
@@ -184,7 +184,14 @@ body{
                                     margin-left: 4%;
                                     background: rgb(0, 0, 0);                                   
                                     top: 12%;
+                                    border: 1px solid rgb(105, 105, 105);
                                     border-radius: 3px;
+                                    img{
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%,-50%);
+                                    }
                                 }
                             }
                         }
