@@ -318,7 +318,7 @@ body{
                                 outline: none;
                                 width: 300px;
                                 margin-top: 50px;
-                                height: 50px;
+                                height: 40px;
                                 padding-left: 10px;
                                 border: none;
                                 border-radius: 8px;
@@ -335,15 +335,24 @@ body{
                                 width: 300px;
                             }
                             .icons{
-                                height: 30px;
+                                height: 40px;
                                 width: 300px;
                                 display: grid;
                                 margin-top: 5px;
-                                grid-template-columns: repeat(4,1fr) 3fr;
+                                grid-template-columns: 1fr .5fr;
                                 align-items: center;
-                                img{
-                                    width: 30px;
-                                    cursor: pointer;
+                                grid-gap: 5px;
+                                .social-media-icons{
+                                    background: #fff;
+                                    height: 30px;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                   
+                                    border-radius: 5px;
+                                    img{
+                                        width: 30px;
+                                        cursor: pointer;
+                                    }
                                 }
                                 .send-icon-div{
                                     justify-self: end;
@@ -355,10 +364,10 @@ body{
                                     align-items: center;
                                     justify-content: space-evenly;
                                     cursor: pointer;
-                                    background: rgba(255, 255, 255, 0.863);
+                                    font-weight: 100;
+                                    background: rgb(255, 255, 255);
                                     .send-icon{
                                         width: 20px;
-                                        margin-left: -30px;
                                     }
                                 }
                             }

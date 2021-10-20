@@ -284,10 +284,10 @@ document.addEventListener('DOMContentLoaded', () => {
         height:window.innerHeight,
         
     })
-    .to('.container_3',5,{
+    .to('.container_3',1,{
        backgroundColor:'#F0B0AF'
         
-    })
+    },'-=3')
     .to('.ui-ux h1',3,{
         display:'none'
     },'-=6')

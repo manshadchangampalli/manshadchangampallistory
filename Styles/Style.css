@@ -380,7 +380,7 @@ body {
   outline: none;
   width: 300px;
   margin-top: 50px;
-  height: 50px;
+  height: 40px;
   padding-left: 10px;
   border: none;
   border-radius: 8px;
@@ -398,19 +398,32 @@ body {
 }
 
 .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form .icons {
-  height: 30px;
+  height: 40px;
   width: 300px;
   display: -ms-grid;
   display: grid;
   margin-top: 5px;
-  -ms-grid-columns: (1fr)[4] 3fr;
-      grid-template-columns: repeat(4, 1fr) 3fr;
+  -ms-grid-columns: 1fr .5fr;
+      grid-template-columns: 1fr .5fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  grid-gap: 5px;
 }
 
-.container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form .icons img {
+.container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form .icons .social-media-icons {
+  background: #fff;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form .icons .social-media-icons img {
   width: 30px;
   cursor: pointer;
 }
@@ -431,12 +444,12 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.863);
+  font-weight: 100;
+  background: white;
 }
 
 .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form .icons .send-icon-div .send-icon {
   width: 20px;
-  margin-left: -30px;
 }
 
 /* its for hero page  */
