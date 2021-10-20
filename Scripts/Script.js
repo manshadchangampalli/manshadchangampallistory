@@ -1,7 +1,11 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     let controller = new ScrollMagic.Controller();
-
     let timeline = new TimelineMax();
+
+   
+    
     timeline
     // first the scroll icon will unvisible 
     .to('#Scroll-icon',2, {
@@ -239,14 +243,70 @@ document.addEventListener('DOMContentLoaded', () => {
         backgroundColor:'#B0FFF1',
         ease:Power3.easeInOut
     },'-=5')
+    .to('.mobile-img-wraper',5,{
+        height:300,
+        width:300
+    },'-=5')
+
     .to('.container_3',5,{
         y:-450,
         ease:Power3.easeInOut
     })
-    .to('.container_3',5,{
+    
+    .to('.container_3',5,
+    {
         y:-900,
         ease:Power3.easeInOut
     })
+    .to('.ui-ux',5,
+    {
+        opacity:1,
+        ease:Power3.easeInOut
+    })
+    .to('.ui-ux h1',4,{
+        opacity:1,
+
+    })
+    .to('.sphere',5,{
+        opacity:1
+    })
+    .to('.sphere1',5,{
+        x:80,
+        y:-100
+
+    })
+    .to('.sphere2',5,{
+        x:-170,
+        y:50
+    },'-=5')
+    .to('.ui-ux',5,{
+        width:window.innerWidth,
+        height:window.innerHeight,
+        
+    })
+    .to('.container_3',5,{
+       backgroundColor:'#F0B0AF'
+        
+    })
+    .to('.ui-ux h1',3,{
+        display:'none'
+    },'-=6')
+    .to('.sphere1',5,{
+        x:0,
+        y:-60
+
+    })
+    .to('.sphere2',5,{
+        x:80,
+        y:10
+    },'-=5')
+    .to('.form',5,{
+       display:'block'
+        
+    })
+    .to('.ui-ux h2',3,{
+        display:'block'
+    },'-=6')
     
     
     
@@ -282,3 +342,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 })
+
