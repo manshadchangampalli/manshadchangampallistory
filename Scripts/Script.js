@@ -60,18 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
         width:'30px',
         ease: Power3.easeInOut
     })
+    .to('.sub_1',3,{
+        opacity:1
+    },'-=3')
     // the cursor also move to right
     .to('#cursor-hello',3,{
         x:220,
         ease: Power3.easeInOut
     },'-=3')
     // the cursor will disappear
-    .to('#cursor-hello',1,{
+    .to(['#cursor-hello','.sub_1'],1,{
         opacity:0,
         ease: Power3.easeInOut
     })
     //the cursor of manshad text will appear
-    .to('#cursor-manshad',1,{
+    .to(['#cursor-manshad','.sub_2'],1,{
         opacity:1,
         ease: Power3.easeInOut
     },'-=.5')
@@ -113,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: Power3.easeInOut
     })
 
-    .to('#cursor-manshad',.6,{
+    .to(['#cursor-manshad','.sub_2'],.6,{
         opacity:0,
         ease: Power3.easeInOut
     })
     //--------------------------------------
 
     // the red color text will appear 
-    .to('#frontend-dev',3,{
+    .to(['#frontend-dev','.sub_3'],3,{
         opacity:1,
         ease: Power3.easeInOut
     })
@@ -129,6 +132,10 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity:0,
         ease: Power3.easeInOut
     },'+=3')
+    .to('.sub_3',3,{
+        opacity:0,
+        ease: Power3.easeInOut
+    },'-=2')
     // the hero page will move to left 
     .to('.hero',6,{
         xPercent:-33.3,
@@ -140,14 +147,31 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: Power3.easeInOut
     },"-=7")
     //the shelf will appear
-    .to('#shelf',6,{
+    .to(['#shelf','.sub_1_1'],6,{
         opacity:1,
         ease: Power3.easeInOut
     },"-=5")
     // the shelf will move to top
-    .to('#shelf',10,{
+    .to('#shelf',3,{
+        yPercent:-20,
+        ease: Power3.easeInOut
+    })
+    .to('.sub_1_1',3,{
+        opacity:0
+    })
+    .to('.sub_1_2',3,{
+        opacity:1
+    })
+    .to('#shelf',3,{
+        yPercent:-40,
+        ease: Power3.easeInOut
+    })
+    .to('#shelf',3,{
         yPercent:-60,
         ease: Power3.easeInOut
+    })
+    .to('.sub_1_2',3,{
+        opacity:0
     })
     // the shelf will blink next few steps 
     .to('#shelf',3,{
