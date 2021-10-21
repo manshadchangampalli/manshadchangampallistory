@@ -158,10 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .to('.sub_1_1',3,{
         opacity:0
-    })
+    },'-=3')
     .to('.sub_1_2',3,{
         opacity:1
-    })
+    },'-=3')
     .to('#shelf',3,{
         yPercent:-40,
         ease: Power3.easeInOut
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .to('.sub_1_2',3,{
         opacity:0
-    })
+    },'-=3')
     // the shelf will blink next few steps 
     .to('#shelf',3,{
         opacity:0,
@@ -234,11 +234,12 @@ document.addEventListener('DOMContentLoaded', () => {
         backgroundColor:'white',
         ease:Power3.easeInOut
     })
-    .to('.curtain-house-img',5,{
+    .to(['.curtain-house-img','.sub-3-1'],5,{
         opacity:1,
         ease:Power3.easeInOut
     })
-    .to('.curtain-house-img',5,{
+   
+    .to(['.curtain-house-img','.sub-3-1'],5,{
         opacity:0,
         ease:Power3.easeInOut
     })
@@ -246,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
         backgroundColor:'black',
         ease:Power3.easeInOut
     })
-    .to('.texki-img',5,{
+    .to(['.texki-img','.sub-3-2'],5,{
         opacity:1,
         ease:Power3.easeInOut
     })
@@ -254,6 +255,10 @@ document.addEventListener('DOMContentLoaded', () => {
         scale:.4,
         y:-150,
         x:-10,
+        ease:Power3.easeInOut
+    })
+    .to(['.sub-3-2'],5,{
+        opacity:0,
         ease:Power3.easeInOut
     })
     .to(".mob-img",5,{
@@ -287,9 +292,8 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity:1,
         ease:Power3.easeInOut
     })
-    .to('.ui-ux h1',4,{
+    .to(['.ui-ux h1','.sub-4'],4,{
         opacity:1,
-
     })
     .to('.sphere',5,{
         opacity:1
@@ -303,6 +307,9 @@ document.addEventListener('DOMContentLoaded', () => {
         x:-170,
         y:50
     },'-=5')
+    .to('.sub-4',3,{
+        opacity:0
+    })
     .to('.ui-ux',5,{
         width:window.innerWidth,
         height:window.innerHeight,

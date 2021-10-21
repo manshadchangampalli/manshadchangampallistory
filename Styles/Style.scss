@@ -41,6 +41,17 @@ body{
             background: rgba(0, 0, 0, 0.815);
             transform: translate(-50%,-50%);
         }
+        .sub3{
+            position: absolute;
+            bottom: 10%;
+            padding: 5px 20px;
+            right: 50vw;
+            color: white;
+            z-index: 999;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.815);
+            transform: translate(-50%,-50%);
+        }  
 
         
         /* its the hero page first section  */
@@ -131,7 +142,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;  
-            background: #b0fff1;       
+            // position: relative;
+            background: #b0fff1;  
+               
             .container_3{
                 width: 100vw;
                 height: 250vh;
@@ -159,9 +172,22 @@ body{
                             place-items: center;
                             height: 100vh;
                             z-index:3;
+                            position: relative;
                             border: 6px solid #b8531a;
                             filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.4));                            // transform: scale(.5);
                             background: #b8531a;
+                            .sub-thirdsection{
+                                position: absolute;
+                                bottom: 10%;
+                                opacity: 0;
+                                left: 50%;
+                                z-index: 9999;
+                                color: white;
+                                background: rgba(0, 0, 0, 0.795);
+                                transform: translate(-50%,-50%);
+                                padding: 8px 20px;
+                                border-radius: 5px;
+                            }
                             .mobile{
                                 width: 320px;
                                 opacity: 0;
@@ -278,6 +304,20 @@ body{
                     justify-self:  center;
                     align-self:center;
                     padding-bottom: 100px;
+                    position: relative;
+                    .sub-4{
+                        position: absolute;
+                        bottom: -10%;
+                        left: 50%;
+                        opacity: 0;
+                        transform: translate(-50%);
+                        color: white;
+                        background: rgba(0, 0, 0, 0.719);
+                        max-width: 400px;
+                        text-align: center;
+                        border-radius: 5px;
+                        padding: 8px 20px;
+                    }
                   .tv{
                       width: 700px;
                       height: 400px;
@@ -298,6 +338,7 @@ body{
                         display: grid;
                         opacity: 0;
                         place-items: center;
+                        
                         .sphere{
                             position: absolute;
                             top: 50%;
