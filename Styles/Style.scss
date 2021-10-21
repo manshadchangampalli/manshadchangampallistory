@@ -151,7 +151,7 @@ body{
                 display: grid;
                 // transform: translateY(2000px);
                 background: #000000;
-                grid-template-rows: repeat(2,1fr);
+                grid-template-rows: 1fr 1fr;
                 .All-img{
                     display: grid;
                     height:100vh;
@@ -317,6 +317,7 @@ body{
                         text-align: center;
                         border-radius: 5px;
                         padding: 8px 20px;
+                        z-index: 4;
                     }
                   .tv{
                       width: 700px;
@@ -331,6 +332,7 @@ body{
                         position: absolute;
                         top: 50%;
                         left: 50%;
+                        z-index: 9999;
                         transform: translate(-50%,-50%);
                         border-radius: 5px;
                         width: 80%;
@@ -460,3 +462,28 @@ body{
 
 
 
+/* lets make it responsive */
+
+@media only screen and (max-width:1024px){
+    .container .hero .second-section svg{
+        transform: translateY(500px);
+    }
+    .container .hero .third-section .container_3{
+        height: 180vh;
+    }
+    .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form {
+        transform: scale(2);
+        top: 30%;
+    }
+    .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {
+        top: 20%;
+        font-size: 60px;
+    }
+    .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere {
+        top: 20%;
+    }
+    .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere2{
+        top: 18%;
+        left: 60%;
+    }
+}

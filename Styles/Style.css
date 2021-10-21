@@ -165,8 +165,8 @@ body {
   display: -ms-grid;
   display: grid;
   background: #000000;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .container .hero .third-section .container_3 .All-img {
@@ -372,6 +372,7 @@ body {
   text-align: center;
   border-radius: 5px;
   padding: 8px 20px;
+  z-index: 4;
 }
 
 .container .hero .third-section .container_3 .tv-wraper .tv {
@@ -390,6 +391,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 9999;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 5px;
@@ -529,4 +531,30 @@ body {
 }
 
 /* its for hero page  */
+/* lets make it responsive */
+@media only screen and (max-width: 1024px) {
+  .container .hero .second-section svg {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+  .container .hero .third-section .container_3 {
+    height: 180vh;
+  }
+  .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    top: 30%;
+  }
+  .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {
+    top: 20%;
+    font-size: 60px;
+  }
+  .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere {
+    top: 20%;
+  }
+  .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere2 {
+    top: 18%;
+    left: 60%;
+  }
+}
 /*# sourceMappingURL=Style.css.map */
