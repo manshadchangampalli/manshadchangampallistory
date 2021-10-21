@@ -252,9 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ease:Power3.easeInOut
     })
     .to(".mobile",5,{
-        scale:.4,
-        y:-150,
-        x:-10,
+        scale:window.innerWidth>768?.4:.2,
+        y:window.innerWidth>768?-150:-230,
+        x:window.innerWidth>768?-10:-90,
         ease:Power3.easeInOut
     })
     .to(['.sub-3-2'],5,{
@@ -262,19 +262,19 @@ document.addEventListener('DOMContentLoaded', () => {
         ease:Power3.easeInOut
     })
     .to(".mob-img",5,{
-        width:300,
+        width:window.innerWidth>768?300:150,
         borderRadius:15,
         borderColor:'black',
-        height:300,
+        height:window.innerWidth>768?300:150,
         ease:Power3.easeInOut
     },'-=5')
     .to(".container_3",5,{
         backgroundColor:'#B0FFF1',
         ease:Power3.easeInOut
     },'-=5')
-    .to('.mobile-img-wraper',5,{
-        height:300,
-        width:300
+    .to(['.mobile-img-wraper'],5, {
+        height:window.innerWidth>768?300:150,
+        width:window.innerWidth>768?300:150
     },'-=5')
 
     .to('.container_3',5,{

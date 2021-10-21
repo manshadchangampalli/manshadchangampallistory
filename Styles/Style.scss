@@ -156,6 +156,7 @@ body{
                     display: grid;
                     height:100vh;
                     grid-gap: 30px;
+                    width: 100vw;
                     grid-template-rows: 1fr 1fr;
                     .mobile-img-wraper{
                         display: grid;
@@ -465,15 +466,24 @@ body{
 /* lets make it responsive */
 
 @media only screen and (max-width:1024px){
+    .container .hero .first-section svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+                
+      }
     .container .hero .second-section svg{
         transform: translateY(500px);
+        width: 90%;
     }
     .container .hero .third-section .container_3{
-        height: 180vh;
+        height: 200vh;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form {
         transform: scale(2);
-        top: 30%;
+        top: 40%;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {
         top: 20%;
@@ -485,5 +495,38 @@ body{
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere2{
         top: 18%;
         left: 60%;
+    }
+}
+
+
+/*lets make it responsive for 768 width*/
+
+@media only screen and (max-width:768px){
+    .container .hero .first-section {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container .hero .first-section svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+                
+      }
+      .container .hero .second-section svg{
+        width: 90%;
+    }
+    .container .hero .third-section .container_3 .tv-wraper .tv {
+        width: 600px;
+        height: 350px;
+    }
+    .container .hero .third-section .container_3 .All-img .images-wraper .first-img img{
+        width: 150px;
+        height: 150px;
+    }
+    .container .hero .third-section .container_3 .All-img .images-wraper .second-img img{
+        width: 150px;
+        height: 150px;
     }
 }
