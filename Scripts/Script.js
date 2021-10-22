@@ -1,3 +1,13 @@
+var warning = document.querySelector('.warning')
+window.addEventListener('resize', reportWindowSize);
+function reportWindowSize(){
+    windowWidth=window.innerWidth
+    if(windowWidth>768){
+        warning.style.display='none';
+    }else{
+        warning.style.display='block';
+    }
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     timeline
     // first the scroll icon will unvisible 
-    .to('#Scroll-icon',2, {
+    .to(['#Scroll-icon','.warning'],2, {
         opacity:0,
         ease: Power3.easeInOut
     })
@@ -219,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: Power3.easeInOut
     })
     .to('.third-section',3,{
-        backgroundColor:'#fff',
+        backgroundColor:'#b0fff1',
         ease: Power3.easeInOut
     })
     .to('.mob-img',3,{
@@ -257,9 +267,15 @@ document.addEventListener('DOMContentLoaded', () => {
         x:window.innerWidth>768?-10:-90,
         ease:Power3.easeInOut
     })
+    .to('.mob-img',7,{
+        scale:.5
+    })
     .to(['.sub-3-2'],5,{
         opacity:0,
         ease:Power3.easeInOut
+    })
+    .to('.mob-img',7,{
+        scale:1
     })
     .to(".mob-img",5,{
         width:window.innerWidth>768?300:150,
@@ -268,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         height:window.innerWidth>768?300:150,
         ease:Power3.easeInOut
     },'-=5')
-    .to(".container_3",5,{
+    .to([".container_3",'.All-img'],5,{
         backgroundColor:'#B0FFF1',
         ease:Power3.easeInOut
     },'-=5')
@@ -277,14 +293,14 @@ document.addEventListener('DOMContentLoaded', () => {
         width:window.innerWidth>768?300:150
     },'-=5')
 
-    .to('.container_3',5,{
-        y:-450,
-        ease:Power3.easeInOut
-    })
+    // .to('.container_3',5,{
+    //     y:-450,
+    //     ease:Power3.easeInOut
+    // })
     
     .to('.container_3',5,
     {
-        y:-900,
+        yPercent:-55,
         ease:Power3.easeInOut
     })
     .to('.ui-ux',5,
@@ -315,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
         height:window.innerHeight,
         
     })
-    .to('.container_3',1,{
+    .to(['.container_3','.third-section','.images-wraper'],1,{
        backgroundColor:'#F0B0AF'
         
     },'-=3')
@@ -328,8 +344,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
     .to('.sphere2',5,{
-        x:80,
-        y:10
+        x:60,
+        y:-40
     },'-=5')
     .to('.form',5,{
        display:'block'
@@ -373,4 +389,35 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 })
+var Name = document.querySelector("input[name='name']")
+var Message = document.querySelector("textarea[name='message']")
+var success = document.querySelector('.success')
+var errorMsg = document.querySelector('.error')
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxBh-oAKO9UoUQ1k1o24LJORtqe9Z_Om8PGQvS68YlLHPEMmamdzAFPRunKDdaK1C8oWA/exec'
+const form = document.forms['manshad-contact-sheet']
+
+form.addEventListener('submit',e =>{
+    e.preventDefault()
+    fetch(scriptURL,{method:'POST',body: new FormData(form)})
+    .then(response=> {success.style.display="block"
+            setTimeout(()=>{
+                Name.value= ""
+                Name.placeholder="name"
+                Message.value= ""
+                success.style.display="none"
+
+            },2000)
+            
+        })
+    .catch((error) => {
+        console.error('Error!',error.message)
+        errorMsg.style.display="block" 
+    }
+    )
+    
+})
+
+
+// AKfycbwuQ_bFOwD_BuIAwW7jvFFAq9HZ1VzXjrqXZLfbPua5chKO6niOcd5HmjC3byFKA6EXbw
+// https://script.google.com/macros/s/AKfycbwuQ_bFOwD_BuIAwW7jvFFAq9HZ1VzXjrqXZLfbPua5chKO6niOcd5HmjC3byFKA6EXbw/exec

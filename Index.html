@@ -23,8 +23,7 @@
                 <h1 class="sub_1_1 sub2">I have three college CIRTIFICATES</h1>
                 <h1 class="sub_1_2 sub2">To the best of my knowledge I made it as a self-learner</h1>
                
-                <h1 class="sub_1_1 sub3">Helloo</h1>
-                <h1 class="sub_1_2 sub3">how are you</h1>
+              
             <!-- this is the first section of the hero page -->
             <div class="first-section">
                 <!-- this is the hero page svg.it include the scrol icon and the laptop table  -->
@@ -801,7 +800,7 @@
                         </linearGradient>
                     </defs>
                 </svg>
-               
+                    <h2 class="warning">Please open it in your Laptop or Pc for better experience :)</h2>
                     <h1 class="sub_1">Hellooo</h1>
                     <h1 class="sub_2">Iam manshad changampalli</h1>
                     <h1 class="sub_3">Iam a frontend developer</h1>
@@ -1823,9 +1822,11 @@
                                
                                 <h1>UI UX</h1>
                                 <h2>CONTACT ME</h2>
-                                <div class="form">
-                                    <input placeholder="Name" type="text">
-                                    <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
+                                <form method="POST" autocomplete="off" name="manshad-contact-sheet" class="form">
+                                    <p class="success">Thank you for your time today : )</p>
+                                    <p class="error">Thank you for your time today. but message is not sended</p>
+                                    <input placeholder="Name" name="name" type="text" required>
+                                    <textarea placeholder="Message..." name="message" id="" cols="30" rows="10" required></textarea>
                                     <div class="icons">
                                         <div class="social-media-icons">
                                             <a href="https://www.instagram.com/manshad_changampalli/"><img src="SVG/Instagram.svg" alt=""></a>
@@ -1833,12 +1834,12 @@
                                             <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img src="SVG/Linkedin.svg" alt=""></a>
                                             <a href="https://github.com/manshadchangampalli"><img src="SVG/GitHub.svg" alt=""></a>
                                         </div>
-                                        <div class="send-icon-div">
+                                        <button type="submit" name="submit" class="send-icon-div">
                                             <h3>send</h3>
                                             <img class="send-icon" src="SVG/send icon (1).svg" alt="">
-                                        </div>
+                                        </button>
                                     </div>
-                                </div>
+                                </form>
                                 
                                 <div class="sphere sphere1"> </div>
                                 <div class="sphere sphere2"> </div>
@@ -1851,6 +1852,7 @@
        
     </section>
     <script src="Scripts/Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
