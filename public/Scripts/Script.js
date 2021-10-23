@@ -1,4 +1,6 @@
-
+function isLoadComplete(){
+    console.log("completed");
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
