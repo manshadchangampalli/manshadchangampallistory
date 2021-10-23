@@ -73,11 +73,10 @@ body{
                 padding: 5px 20px;
                 text-align: center;
                 left: 50%;
-                display: none;
                 color: rgb(255, 153, 0);
                 border-radius: 5px;
                 font-size: 15px;
-                background: rgba(255, 0, 0, 0.329);
+                background: rgba(255, 145, 0, 0.329);
                 transform: translate(-50%);
             }
             
@@ -413,8 +412,8 @@ body{
                                 color: rgb(1, 78, 1);
                                 background: rgba(1, 173, 16, 0.589);
                                 padding: 8px 20px;
-                                display: block;
-                                margin-bottom: -30px;
+                                display: none;
+                                margin-bottom: 5px;
                                 border-radius: 5px;
                                 z-index: 999999999;
                             }
@@ -422,17 +421,30 @@ body{
                                 text-align: center;
                                 color: rgb(78, 1, 1);
                                 display: none;
-                                margin-bottom: -10px;
+                                margin-bottom: 10px;
                                 background: rgba(173, 1, 1, 0.589);
                                 padding: 8px 20px;
                                 border-radius: 5px;
                                 z-index: 999999999;
                             }
+                            .validEmail{
+                                font-size: 10px;
+                                background: rgba(143, 151, 255, 0.637);
+                                padding: 4px 10px;
+                                text-align: center;  
+                                border-radius: 5px;
+                                top: 100px;
+                                left: 50%;
+                                transform: translate(-50%);
+                                width: 100%;                             
+                                display: none;
+                                position: absolute;
+                            }
                             input{
                                 
                                 outline: none;
                                 width: 300px;
-                                margin-top: 50px;
+                                margin-top: 10px;
                                 z-index: 99;
                                 height: 40px;
                                 padding-left: 10px;
@@ -447,7 +459,7 @@ body{
                                 padding-top: 10px;
                                 border-radius: 8px;
                                 outline: none;
-                                margin-top: 15px;
+                                margin-top: 18px;
                                 width: 300px;
                             }
                             .icons{
@@ -468,6 +480,9 @@ body{
                                     img{
                                         width: 30px;
                                         cursor: pointer;
+                                        &:hover{
+                                          transform: scale(1.1);  
+                                        }
                                     }
                                 }
                                 .send-icon-div{
@@ -482,10 +497,25 @@ body{
                                     border: none;
                                     outline: none;
                                     cursor: pointer;
+                                    cursor: pointer;
                                     font-weight: 100;
                                     background: rgb(255, 255, 255);
+                                    &:hover h3{
+                                        color: rgba(0, 0, 255, 0.589);
+                                    }
                                     .send-icon{
                                         width: 20px;
+                                    }
+                                    .send-icon-animation{
+                                        animation: jerk 2s ease;
+                                    }
+                                    @keyframes jerk {
+                                        0%{
+                                            transform: translateX(15px);
+                                        }
+                                        90%{
+                                            transform: translateX(-10px);
+                                        }
                                     }
                                 }
                             }
@@ -510,7 +540,11 @@ body{
 
 
 /* lets make it responsive */
-
+@media only screen and (min-width:640px){
+    .warning{
+        display: none;
+    }
+}
 @media only screen and (max-width:1024px) {
     .container .hero .first-section svg {
         position: absolute;
@@ -565,9 +599,7 @@ body{
 /*lets make it responsive for 768 width*/
 
 @media only screen and (max-width:768px){
-   .warning{
-       display: block;
-   }
+   
     .container .hero .first-section {
         width: 100vw;
         height: 100vh;
@@ -604,6 +636,9 @@ body{
 /*lets make it as responsive for width 650*/
 
 @media only screen and (max-width:640px){
+    .warning{
+        display: block;
+    }
     .container .hero .first-section h1{
         font-size: 15px;
     }
@@ -619,15 +654,15 @@ body{
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {
         font-size: 50px;
-        top: 40%;
+        top: 35%;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere {
-        top: 40%;
+        top: 35%;
         width: 60px;
         height: 60px;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .sphere2 {
-        top: 40%;
+        top: 35%;
         width: 60px;
         height: 60px;
     }

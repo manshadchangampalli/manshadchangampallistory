@@ -1,13 +1,4 @@
-var warning = document.querySelector('.warning')
-window.addEventListener('resize', reportWindowSize);
-function reportWindowSize(){
-    windowWidth=window.innerWidth
-    if(windowWidth>768){
-        warning.style.display='none';
-    }else{
-        warning.style.display='block';
-    }
-}
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -340,7 +331,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },'-=6')
     .to('.sphere1',5,{
         x:0,
-        y:-60
+        y:-120
 
     })
     .to('.sphere2',5,{
@@ -389,13 +380,31 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 })
+
+var button = document.querySelector('button').addEventListener('click',buttonClicked)
+var buttonImg = document.querySelector('button>img')
+var Email = document.querySelector("input[name='email']")
 var Name = document.querySelector("input[name='name']")
 var Message = document.querySelector("textarea[name='message']")
 var success = document.querySelector('.success')
 var errorMsg = document.querySelector('.error')
+var isEmailValid = document.querySelector('.validEmail')
 
+
+Email.addEventListener('focus',()=>{
+    isEmailValid.style.display="block"
+})
+Email.addEventListener('blur',()=>{
+    isEmailValid.style.display="none"
+})
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxBh-oAKO9UoUQ1k1o24LJORtqe9Z_Om8PGQvS68YlLHPEMmamdzAFPRunKDdaK1C8oWA/exec'
 const form = document.forms['manshad-contact-sheet']
+
+function buttonClicked(){
+   if(Name.value !="" && Message.value !=""){
+       buttonImg.classList.add("send-icon-animation")
+   }
+}
 
 form.addEventListener('submit',e =>{
     e.preventDefault()
@@ -403,7 +412,7 @@ form.addEventListener('submit',e =>{
     .then(response=> {success.style.display="block"
             setTimeout(()=>{
                 Name.value= ""
-                Name.placeholder="name"
+                Email.value=""
                 Message.value= ""
                 success.style.display="none"
 
