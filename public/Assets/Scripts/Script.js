@@ -1,5 +1,31 @@
+// find it which browser is this 
+
+navigator.sayswho= (function(){
+    var ua= navigator.userAgent;
+    var tem; 
+    var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return 'IE '+(tem[1] || '');
+    }
+    if(M[1]=== 'Chrome'){
+        tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+        if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+    }
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    return M.join(' ');
+})();
+// Firefox 26+, Chrome 30+, Safari 5.1+, Opera 10+, IE 9+
+console.log(navigator.sayswho);
+
+
+
 function isLoadComplete(){
-    console.log("completed");
+    setTimeout(() => {
+        document.querySelector('.loading').style.display="none"
+    }, 1500);
+
 }
 
 
@@ -261,14 +287,21 @@ document.addEventListener('DOMContentLoaded', () => {
         ease:Power3.easeInOut
     })
     .to('.mob-img',7,{
-        scale:.5
+        scale:.5,
+
     })
+    .to('.mob-img',5,{
+        x:0
+    },'-=5')
     .to(['.sub-3-2'],5,{
         opacity:0,
         ease:Power3.easeInOut
     })
     .to('.mob-img',7,{
-        scale:1
+        scale:1,
+        x:0
+
+        
     })
     .to(".mob-img",5,{
         width:window.innerWidth>768?300:150,
@@ -325,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
     })
     .to(['.container_3','.third-section','.images-wraper'],1,{
-       backgroundColor:'#F0B0AF'
+       backgroundColor:'#010033'
         
     },'-=3')
     .to('.ui-ux h1',3,{
@@ -365,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let scene = new ScrollMagic.Scene({
         triggerElement: '.hero',
-        duration: '100%',
+        duration: '900%',
         triggerHook: 0,
         offset: '0'
     })
@@ -428,7 +461,17 @@ form.addEventListener('submit',e =>{
     )
     
 })
+document.querySelector("input[name='email']").onkeydown = new function(event){return false}
+document.querySelector("input[name='text']").onkeydown = new function(event){return false}
+document.querySelector("textarea[name='message']").onkeydown = new function(event){return false}
 
 
-// AKfycbwuQ_bFOwD_BuIAwW7jvFFAq9HZ1VzXjrqXZLfbPua5chKO6niOcd5HmjC3byFKA6EXbw
-// https://script.google.com/macros/s/AKfycbwuQ_bFOwD_BuIAwW7jvFFAq9HZ1VzXjrqXZLfbPua5chKO6niOcd5HmjC3byFKA6EXbw/exec
+// for decreaseing mouse scroll speed --------------------------------------
+
+// $('input[type="text"]').blur(function() {
+//     setTimeout(function() {
+//       if (!$(document.activeElement).is('input[type="text"]')) {
+//         $(window).scrollTop(0,0);
+//       }
+//     }, 0);
+//   });

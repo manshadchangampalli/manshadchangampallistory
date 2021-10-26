@@ -13,10 +13,36 @@ body{
     background: #000;
     
 }
+.loading{
+    width: 100vw;
+    position: fixed;
+    z-index: 999999;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #000;
+    .warning{
+        position: fixed;
+        top: 10%;
+        opacity: .5;
+        padding: 5px 20px;
+        text-align: center;
+        left: 50%;
+        color: rgb(255, 153, 0);
+        border-radius: 5px;
+        font-size: 15px;
+        background: rgba(255, 145, 0, 0.329);
+        transform: translate(-50%);
+    }
+    .loadingGif{
+        width: 300px;
+        height: auto;
+    }
+}
 .container {
     width: 100vw;
     overflow-x: hidden;
-    height: 200vh;
+    height: 1000vh;
     position: relative; 
     
 
@@ -66,19 +92,7 @@ body{
             background: #000;
             position: relative;
             border: none;
-            h2{
-                position: absolute;
-                top: 10%;
-                opacity: .5;
-                padding: 5px 20px;
-                text-align: center;
-                left: 50%;
-                color: rgb(255, 153, 0);
-                border-radius: 5px;
-                font-size: 15px;
-                background: rgba(255, 145, 0, 0.329);
-                transform: translate(-50%);
-            }
+           
             
            h1{
                 position: absolute;
@@ -94,7 +108,7 @@ body{
             }
             /* its the hero page svg  */
             svg {
-                scale: .3;
+                
 
 
                 #Scroll-icon {
@@ -349,7 +363,7 @@ body{
                       box-shadow: 0px 0px 50px 55px rgba(0, 0, 0, 0.15);
                       border: 19px solid rgb(46, 46, 46);
                       .ui-ux{
-                        background: #F0B0AF;
+                        background: #010033;
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -367,7 +381,7 @@ body{
                             top: 50%;
                             width: 100px;
                             opacity: 0;
-                            background: rgba(233, 29, 29, 0.548);
+                            background: rgb(212, 138, 0);
                             z-index: 1;
                             height: 100px;
                             border-radius: 50%;
@@ -376,7 +390,7 @@ body{
                             opacity: 0;
                             left: 60%;
                             top: 30%;
-                            background: rgb(2, 49, 12);
+                            background: rgb(0, 255, 213);
                         }
                         h1{
                             color: rgb(255, 255, 255);
@@ -562,7 +576,7 @@ body{
         height: 200vh;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form {
-        transform: scale(2);
+        transform: scale(1.2);
         top: 50%;
     }
     .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {

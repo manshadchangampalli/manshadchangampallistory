@@ -12,10 +12,41 @@ body {
   background: #000;
 }
 
+.loading {
+  width: 100vw;
+  position: fixed;
+  z-index: 999999;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+
+.loading .warning {
+  position: fixed;
+  top: 10%;
+  opacity: .5;
+  padding: 5px 20px;
+  text-align: center;
+  left: 50%;
+  color: #ff9900;
+  border-radius: 5px;
+  font-size: 15px;
+  background: rgba(255, 145, 0, 0.329);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.loading .loadingGif {
+  width: 300px;
+  height: auto;
+}
+
 .container {
   width: 100vw;
   overflow-x: hidden;
-  height: 200vh;
+  height: 1000vh;
   position: relative;
 }
 
@@ -73,21 +104,6 @@ body {
   /* its the hero page svg  */
 }
 
-.container .hero .first-section h2 {
-  position: absolute;
-  top: 10%;
-  opacity: .5;
-  padding: 5px 20px;
-  text-align: center;
-  left: 50%;
-  color: #ff9900;
-  border-radius: 5px;
-  font-size: 15px;
-  background: rgba(255, 145, 0, 0.329);
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
 .container .hero .first-section h1 {
   position: absolute;
   bottom: 10%;
@@ -100,10 +116,6 @@ body {
   background: rgba(0, 0, 0, 0.411);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.container .hero .first-section svg {
-  scale: .3;
 }
 
 .container .hero .first-section svg #Scroll-icon {
@@ -410,7 +422,7 @@ body {
 }
 
 .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux {
-  background: #F0B0AF;
+  background: #010033;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -431,7 +443,7 @@ body {
   top: 50%;
   width: 100px;
   opacity: 0;
-  background: rgba(233, 29, 29, 0.548);
+  background: #d48a00;
   z-index: 1;
   height: 100px;
   border-radius: 50%;
@@ -441,7 +453,7 @@ body {
   opacity: 0;
   left: 60%;
   top: 30%;
-  background: #02310c;
+  background: #00ffd5;
 }
 
 .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h1 {
@@ -658,8 +670,8 @@ body {
     height: 200vh;
   }
   .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux .form {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     top: 50%;
   }
   .container .hero .third-section .container_3 .tv-wraper .tv .ui-ux h2 {
