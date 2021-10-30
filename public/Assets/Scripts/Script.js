@@ -1,23 +1,25 @@
 // find it which browser is this 
 
-navigator.sayswho= (function(){
-    var ua= navigator.userAgent;
-    var tem; 
-    var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-    if(/trident/i.test(M[1])){
-        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
-        return 'IE '+(tem[1] || '');
-    }
-    if(M[1]=== 'Chrome'){
-        tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
-        if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
-    }
-    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
-    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
-    return M.join(' ');
-})();
+// navigator.sayswho= (function(){
+//     var ua= navigator.userAgent;
+//     var tem; 
+//     var M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+//     if(/trident/i.test(M[1])){
+//         tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+//         return 'IE '+(tem[1] || '');
+//     }
+//     if(M[1]=== 'Chrome'){
+//         tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+//         if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+//     }
+//     M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+//     if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+//     return M.join(' ');
+// })();
 // Firefox 26+, Chrome 30+, Safari 5.1+, Opera 10+, IE 9+
-console.log(navigator.sayswho);
+// console.log(navigator.sayswho);
+
+
 
 
 
@@ -466,3 +468,16 @@ document.querySelector("input[name='text']").onkeydown = new function(event){ret
 document.querySelector("textarea[name='message']").onkeydown = new function(event){return false}
 
 
+// for the input focus scroll prevent 
+
+
+
+Name.focus({
+  preventScroll: true
+});
+Email.focus({
+    preventScroll: true
+});
+Message.focus({
+    preventScroll: true
+});
