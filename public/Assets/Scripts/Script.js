@@ -466,12 +466,3 @@ document.querySelector("input[name='text']").onkeydown = new function(event){ret
 document.querySelector("textarea[name='message']").onkeydown = new function(event){return false}
 
 
-// for decreaseing mouse scroll speed --------------------------------------
-
-// $('input[type="text"]').blur(function() {
-//     setTimeout(function() {
-//       if (!$(document.activeElement).is('input[type="text"]')) {
-//         $(window).scrollTop(0,0);
-//       }
-//     }, 0);
-//   });
