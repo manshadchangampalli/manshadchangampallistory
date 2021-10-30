@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .to('.ui-ux h2',3,{
         display:'block'
     },'-=6')
-    .to('.ui-ux h2',10,{
+    .to('.ui-ux h2',100,{
         display:'block'
     })
     .to('.ui-ux h2',5,{
