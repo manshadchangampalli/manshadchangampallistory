@@ -429,8 +429,9 @@ var isEmailValid = document.querySelector('.validEmail')
 
 
 Email.addEventListener('focus',()=>{
-    Email.preventScroll;
+    
     isEmailValid.style.display="block";
+    Email.style.position = "fixed";
 })
 Email.addEventListener('blur',()=>{
     isEmailValid.style.display="none"
