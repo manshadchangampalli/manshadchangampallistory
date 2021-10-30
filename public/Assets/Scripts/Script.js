@@ -382,6 +382,19 @@ document.addEventListener('DOMContentLoaded', () => {
     .to('.ui-ux h2',3,{
         display:'block'
     },'-=6')
+    .to('.ui-ux h2',10,{
+        display:'block'
+    })
+    .to('.ui-ux h2',5,{
+        display:'block'
+    })
+    .to('.ui-ux h2',5,{
+        display:'block'
+    })
+    .to('.ui-ux h2',5,{
+        display:'block'
+    })
+    
     
     
     
@@ -431,7 +444,6 @@ var isEmailValid = document.querySelector('.validEmail')
 Email.addEventListener('focus',()=>{
     
     isEmailValid.style.display="block";
-    Email.style.position = "fixed";
 })
 Email.addEventListener('blur',()=>{
     isEmailValid.style.display="none"
