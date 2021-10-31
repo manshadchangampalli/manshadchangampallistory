@@ -15,6 +15,45 @@
 </head>
 
 <body onload="isLoadComplete()">
+
+    <!-- this is a message page its only saw when user open in mobile  -->
+    <div class="message-page">
+        <div onclick="backButtonClicked()" class="back-button">
+            <img class="backbtnimg" src="/public/Images/backbutton-icon.png" alt="back">
+        </div>
+        <h1 class="message-page-title">CONTACT ME</h1>
+        <form method="POST" autocomplete="nope" name="manshad-contact-sheet" class="form">
+            <!-- if the contact is success it will show  -->
+            <p class="success">Thank you for your time today : )</p>
+            <!-- if the contact is error it will show  -->
+            <p class="error">Thank you for your time today. but message is not sended</p>
+            <!-- it the name input  -->
+            <input placeholder="Name" autocomplete="nope" name="name" type="text" required>
+            <!-- for the valid email message  -->
+            <p class="validEmail">Let me know your valid email. I will contact you</p>
+            <!-- email input  -->
+            <input placeholder="email" autocomplete="nope" name="email" type="email" required>
+            <!-- its the message input  -->
+            <textarea placeholder="Message..." autocomplete="nope"  name="message" id="" cols="30" rows="10" required></textarea>
+            <!-- its the icons all icons included with send icon also  -->
+            <div class="icons">
+                <!-- social media icons  -->
+                <div class="social-media-icons">
+                    <a href="https://www.instagram.com/manshad_changampalli/"><img src="./public/SVG/Instagram.svg" alt=""></a>
+                    <a href="https://www.behance.net/manshadchangam"><img src="./public/SVG/Behance.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img src="./public/SVG/Linkedin.svg" alt=""></a>
+                    <a href="https://github.com/manshadchangampalli"><img src="./public/SVG/GitHub.svg" alt=""></a>
+                </div>
+                <!-- send button  -->
+                <button autocomplete="nope" type="submit" name="submit" class="send-icon-div">
+                    <h3>send</h3>
+                    <img class="send-icon " src="./public/SVG/send icon (1).svg" alt="">
+                </button>
+            </div>
+        </form>
+
+    </div>
+
     <div class="loading">
         <h2 class="warning">Please open it in your Laptop or Pc for better experience :)</h2>
         <img class="loadingGif" src="./public/Images/Loading1.gif" alt="">
@@ -1847,7 +1886,27 @@
                                 <h1>UI UX</h1>
                                 <!-- its contact me heading  -->
                                 <h2>CONTACT ME</h2>
+                                <div class="form-wraper">
+                                    <div class="form-redirect">
+                                    <h3>
+                                        OH NO! <br> SOMETHING WENT TO <span> WRONG </span>
+                                    </h3>
+                                    
+                                        <div onclick="textmeButtonClicked()" class="textme-btn">TEXT-ME</div>
+                               
+                                    <div class="social-media-icons-1">
+                                        <a href="https://www.instagram.com/manshad_changampalli/"><img
+                                                src="/public/SVG/Instagram.svg" alt=""></a>
+                                        <a href="https://www.behance.net/manshadchangam"><img src="/public/SVG/Behance.svg"
+                                                alt=""></a>
+                                        <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img
+                                                src="/public/SVG/Linkedin.svg" alt=""></a>
+                                        <a href="https://github.com/manshadchangampalli"><img src="/public/SVG/GitHub.svg"
+                                                alt=""></a>
+                                    </div>
 
+
+                                </div>
                                 <!-- its the contact me form  -->
                                 <form method="POST" autocomplete="nope" name="manshad-contact-sheet" class="form">
                                     <!-- if the contact is success it will show  -->
@@ -1878,6 +1937,7 @@
                                         </button>
                                     </div>
                                 </form>
+                                </div>
                                 <!-- the animated shperes  -->
                                 <div class="sphere sphere1"> </div>
                                 <div class="sphere sphere2"> </div>
