@@ -336,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity:1,
         ease:Power3.easeInOut
     })
-    .to(['.ui-ux h1','.sub-4'],4,{
+    .to(['.ui-ux-h1','.sub-4'],4,{
         opacity:1,
     })
     .to('.sphere',5,{
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
        backgroundColor:'#010033'
         
     },'-=3')
-    .to('.ui-ux h1',3,{
+    .to('.ui-ux-h1',3,{
         display:'none'
     },'-=6')
     .to('.sphere1',5,{
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
         x:60,
         y:-40
     },'-=5')
-    .to('.form',5,{
+    .to('.form-wraper',5,{
        display:'block'
         
     })
@@ -446,12 +446,12 @@ function buttonClicked(){
 form.addEventListener('submit',e =>{
     e.preventDefault()
     fetch(scriptURL,{method:'POST',body: new FormData(form)})
-    .then(response=> {success.style.display="block"
+    .then(response=> {success.style.opacity="1"
             setTimeout(()=>{
                 Name.value= ""
                 Email.value=""
                 Message.value= ""
-                success.style.display="none"
+                success.style.opacity="0"
 
             },2000)
             
@@ -463,21 +463,33 @@ form.addEventListener('submit',e =>{
     )
     
 })
-document.querySelector("input[name='email']").onkeydown = new function(event){return false}
-document.querySelector("input[name='text']").onkeydown = new function(event){return false}
-document.querySelector("textarea[name='message']").onkeydown = new function(event){return false}
+// document.querySelector("input[name='email']").onkeydown = new function(event){return false}
+// document.querySelector("input[name='text']").onkeydown = new function(event){return false}
+// document.querySelector("textarea[name='message']").onkeydown = new function(event){return false}
 
 
 // for the input focus scroll prevent 
 
 
 
-Name.focus({
-  preventScroll: true
-});
-Email.focus({
-    preventScroll: true
-});
-Message.focus({
-    preventScroll: true
-});
+// Name.focus({
+//   preventScroll: true
+// });
+// Email.focus({
+//     preventScroll: true
+// });
+// Message.focus({
+//     preventScroll: true
+// });
+
+
+// if back button clicked ------------------
+
+function backButtonClicked(){
+    document.querySelector('.backbtnimg').classList.add(".back-btn-img")
+    document.querySelector('.message-page').style.display="none"
+   
+}
+function textmeButtonClicked(){
+    document.querySelector('.message-page').style.display="block"
+}

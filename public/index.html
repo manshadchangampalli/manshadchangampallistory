@@ -15,6 +15,44 @@
 </head>
 
 <body onload="isLoadComplete()">
+    <div class="message-page">
+        <div onclick="backButtonClicked()" class="back-button">
+            <img class="backbtnimg" src="Images/backbutton-icon.png" alt="back">
+        </div>
+        <h1 class="message-page-title">CONTACT ME</h1>
+        <form method="POST" autocomplete="nope" name="manshad-contact-sheet" class="form">
+            <!-- if the contact is success it will show  -->
+            <p class="success">Thank you for your time today : )</p>
+            <!-- if the contact is error it will show  -->
+            <p class="error">Thank you for your time today. but message is not sended</p>
+            <!-- it the name input  -->
+            <input placeholder="Name" autocomplete="nope" name="name" type="text" required>
+            <!-- for the valid email message  -->
+            <p class="validEmail">Let me know your valid email. I will contact you</p>
+            <!-- email input  -->
+            <input placeholder="email" autocomplete="nope" name="email" type="email" required>
+            <!-- its the message input  -->
+            <textarea placeholder="Message..." autocomplete="nope" name="message" id="" cols="30" rows="10"
+                required></textarea>
+            <!-- its the icons all icons included with send icon also  -->
+            <div class="icons">
+                <!-- social media icons  -->
+                <div class="social-media-icons">
+                    <a href="https://www.instagram.com/manshad_changampalli/"><img src="SVG/Instagram.svg" alt=""></a>
+                    <a href="https://www.behance.net/manshadchangam"><img src="SVG/Behance.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img src="SVG/Linkedin.svg"
+                            alt=""></a>
+                    <a href="https://github.com/manshadchangampalli"><img src="SVG/GitHub.svg" alt=""></a>
+                </div>
+                <!-- send button  -->
+                <button autocomplete="nope" type="submit" name="submit" class="send-icon-div">
+                    <h3>send</h3>
+                    <img class="send-icon " src="SVG/send icon (1).svg" alt="">
+                </button>
+            </div>
+        </form>
+
+    </div>
     <div class="loading">
         <h2 class="warning">Please open it in your Laptop or Pc for better experience :)</h2>
         <img class="loadingGif" src="Images/Loading1.gif" alt="">
@@ -23,12 +61,12 @@
 
         <!-- this is the hero section . it also have two sections -->
         <div class="hero">
-            
+
             <!-- its the second section subtitile . it positioned at center of the hero that's the second section -->
-                <h1 class="sub_1_1 sub2">I have three college CIRTIFICATES</h1>
-                <h1 class="sub_1_2 sub2">To the best of my knowledge I made it as a self-learner</h1>
-               
-              
+            <h1 class="sub_1_1 sub2">I have three college CIRTIFICATES</h1>
+            <h1 class="sub_1_2 sub2">To the best of my knowledge I made it as a self-learner</h1>
+
+
             <!-- this is the first section of the hero page -->
             <div class="first-section">
                 <!-- this is the hero page svg.it include the scrol icon and the laptop table  -->
@@ -55,7 +93,7 @@
                         </g>
                         <g id="FirstSectionSvg">
                             <g id="Table">
-                                <path id="Rectangle 65" d="M124 176H964L1080 438H0L124 176Z"
+                                <path id="Rectangle 65" d="M124 176H964L1080 438H0L124 176Z" block
                                     fill="url(#paint0_linear_51:72)" />
                                 <path id="Rectangle 66" d="M0 438H1080V482H0V438Z" fill="#4D1C00" />
                             </g>
@@ -808,11 +846,11 @@
 
                 <!-- its the warning to change the device it placed ath first section -->
 
-                    <!-- its the sub title of first section  -->
-                    <h1 class="sub_1">Hellooo</h1>
-                    <h1 class="sub_2">Iam manshad changampalli</h1>
-                    <h1 class="sub_3">Iam a frontend developer</h1>
-                
+                <!-- its the sub title of first section  -->
+                <h1 class="sub_1">Hellooo</h1>
+                <h1 class="sub_2">Iam manshad changampalli</h1>
+                <h1 class="sub_3">Iam a frontend developer</h1>
+
             </div>
             <!-- this is the first section of the hero page -->
             <div class="second-section">
@@ -1299,7 +1337,7 @@
                             <path id="Vector 18"
                                 d="M193.316 1208.02C161.4 1185.22 147.276 1166.81 139.506 1134.29C135.983 1119.54 132.736 1101.17 143.679 1090.67C152.233 1082.47 164.245 1099 181.404 1121.07C187.765 1089.37 193.647 1087.59 200.711 1096.97C212.486 1112.62 217.165 1132.93 216.206 1152.49C214.878 1179.59 207.01 1191.91 193.316 1208.02Z"
                                 fill="#9F0F0F" />
-                           
+
                         </g>
                         <g id="BOOKS">
                             <rect id="Rectangle 116" x="41" y="659" width="36" height="238" fill="#0032E3" />
@@ -1574,7 +1612,7 @@
                             <rect id="Rectangle 95" x="38" y="894" width="787" height="50" fill="#F7F2EF" />
                         </g>
                     </g>
-                    
+
                     <defs>
                         <filter id="filter0_d_49:164" x="776.954" y="503.868" width="60.0463" height="69.3447"
                             filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -1793,7 +1831,7 @@
                     </defs>
                 </svg>
 
-                
+
             </div>
             <!-- its the third section  -->
             <div class="third-section">
@@ -1838,46 +1876,75 @@
                     <!-- here is the tv wraper -->
                     <div class="tv-wraper">
                         <!-- its the sub title of tv  -->
-                        <h1 class="sub-4" >when I can , i like to make a design and contribute the open-source</h1>
+                        <h1 class="sub-4">when I can , i like to make a design and contribute the open-source</h1>
                         <!-- its the tv outline  -->
                         <div class="tv">
                             <!-- the tv uiux banner  -->
                             <div class="ui-ux">
-                               <!-- its the ui ux heading  -->
-                                <h1>UI UX</h1>
+                                <!-- its the ui ux heading  -->
+                                <h1 class="ui-ux-h1">UI UX</h1>
                                 <!-- its contact me heading  -->
                                 <h2>CONTACT ME</h2>
-
-                                <!-- its the contact me form  -->
-                                <form method="POST" autocomplete="nope" name="manshad-contact-sheet" class="form">
-                                    <!-- if the contact is success it will show  -->
-                                    <p class="success">Thank you for your time today : )</p>
-                                    <!-- if the contact is error it will show  -->
-                                    <p class="error">Thank you for your time today. but message is not sended</p>
-                                    <!-- it the name input  -->
-                                    <input placeholder="Name" autocomplete="nope" name="name" type="text" required>
-                                    <!-- for the valid email message  -->
-                                    <p class="validEmail">Let me know your valid email. I will contact you</p>
-                                    <!-- email input  -->
-                                    <input placeholder="email" autocomplete="nope" name="email" type="email" required>
-                                    <!-- its the message input  -->
-                                    <textarea placeholder="Message..." autocomplete="nope"  name="message" id="" cols="30" rows="10" required></textarea>
-                                    <!-- its the icons all icons included with send icon also  -->
-                                    <div class="icons">
-                                        <!-- social media icons  -->
-                                        <div class="social-media-icons">
-                                            <a href="https://www.instagram.com/manshad_changampalli/"><img src="SVG/Instagram.svg" alt=""></a>
-                                            <a href="https://www.behance.net/manshadchangam"><img src="SVG/Behance.svg" alt=""></a>
-                                            <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img src="SVG/Linkedin.svg" alt=""></a>
-                                            <a href="https://github.com/manshadchangampalli"><img src="SVG/GitHub.svg" alt=""></a>
+                                <!-- its the contact redirect form  -->
+                                <div class="form-wraper">
+                                    <div class="form-redirect">
+                                        <h3>
+                                            OH NO! <br> SOMETHING WENT TO <span> WRONG </span>
+                                        </h3>
+                                        
+                                            <div onclick="textmeButtonClicked()" class="textme-btn">TEXT-ME</div>
+                                   
+                                        <div class="social-media-icons-1">
+                                            <a href="https://www.instagram.com/manshad_changampalli/"><img
+                                                    src="SVG/Instagram.svg" alt=""></a>
+                                            <a href="https://www.behance.net/manshadchangam"><img src="SVG/Behance.svg"
+                                                    alt=""></a>
+                                            <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img
+                                                    src="SVG/Linkedin.svg" alt=""></a>
+                                            <a href="https://github.com/manshadchangampalli"><img src="SVG/GitHub.svg"
+                                                    alt=""></a>
                                         </div>
-                                        <!-- send button  -->
-                                        <button autocomplete="nope" type="submit" name="submit" class="send-icon-div">
-                                            <h3>send</h3>
-                                            <img class="send-icon " src="SVG/send icon (1).svg" alt="">
-                                        </button>
+
+
                                     </div>
-                                </form>
+                                    <!-- its the contact me form  -->
+                                    <form method="POST" autocomplete="nope" name="manshad-contact-sheet" class="form">
+                                        <!-- if the contact is success it will show  -->
+                                        <p class="success">Thank you for your time today : )</p>
+                                        <!-- if the contact is error it will show  -->
+                                        <p class="error">Thank you for your time today. but message is not sended</p>
+                                        <!-- it the name input  -->
+                                        <input placeholder="Name" autocomplete="nope" name="name" type="text" required>
+                                        <!-- for the valid email message  -->
+                                        <p class="validEmail">Let me know your valid email. I will contact you</p>
+                                        <!-- email input  -->
+                                        <input placeholder="email" autocomplete="nope" name="email" type="email"
+                                            required>
+                                        <!-- its the message input  -->
+                                        <textarea placeholder="Message..." autocomplete="nope" name="message" id=""
+                                            cols="30" rows="10" required></textarea>
+                                        <!-- its the icons all icons included with send icon also  -->
+                                        <div class="icons">
+                                            <!-- social media icons  -->
+                                            <div class="social-media-icons">
+                                                <a href="https://www.instagram.com/manshad_changampalli/"><img
+                                                        src="SVG/Instagram.svg" alt=""></a>
+                                                <a href="https://www.behance.net/manshadchangam"><img
+                                                        src="SVG/Behance.svg" alt=""></a>
+                                                <a href="https://www.linkedin.com/in/manshad-changampalli-b6b07b212/"><img
+                                                        src="SVG/Linkedin.svg" alt=""></a>
+                                                <a href="https://github.com/manshadchangampalli"><img
+                                                        src="SVG/GitHub.svg" alt=""></a>
+                                            </div>
+                                            <!-- send button  -->
+                                            <button autocomplete="nope" type="submit" name="submit"
+                                                class="send-icon-div">
+                                                <h3>send</h3>
+                                                <img class="send-icon " src="SVG/send icon (1).svg" alt="">
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                                 <!-- the animated shperes  -->
                                 <div class="sphere sphere1"> </div>
                                 <div class="sphere sphere2"> </div>
@@ -1887,7 +1954,7 @@
                 </div>
             </div>
         </div>
-       
+
     </section>
     <script src="Assets/Scripts/Script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
